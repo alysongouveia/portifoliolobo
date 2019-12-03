@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <math.h>
+#define pi 3.14159265358979323846
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:: This function converts decimal degrees to radians :*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+double deg2rad(double deg) {
+ return (deg * pi / 180);
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:: This function converts radians to decimal degrees :*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+double rad2deg(double rad) {
+ return (rad * 180 / pi);
+}
+double distance(double lat1, double lon1, double lat2, double lon2, char unit) {
+ double theta, dist;
+ if ((lat1 == lat2) && (lon1 == lon2)) {
+ return 0;
+ }
+ else {
+ theta = lon1 - lon2;
+ dist = sin(deg2rad(lat1)) * sin(deg2rad(lat2)) + cos(deg2rad(lat1)) *
+cos(deg2rad(lat2)) * cos(deg2rad(theta));
+ dist = acos(dist);
+ dist = rad2deg(dist);
+ dist = dist * 60 * 1.1515;
+ dist = dist * 1.609344;
+ return (dist);
+ }
+}
+int main() {
+double latitude_dono =0; //aqui eu crio as variáveis
+double longitude_dono =0;
+double latitude_pet =0;
+double longitude_pet =0;
+printf("Digite sua latitude "); //aqui eu peço a latitude e longitude do dono
+scanf("%lf",&latitude_dono);
+printf("Digite sua longitude ");
+scanf("%lf",&longitude_dono);
+printf("Digite a latitude do PET "); //aqui eu peço a latitude e longitude do PET
+4
+scanf("%lf",&latitude_pet);
+printf("digite a longitude do PET ");
+scanf("%lf",&longitude_pet);
+//printf("%lf %lf %lf
+%lf",latitude_dono,longitude_dono,latitude_pet,longitude_pet );
+double distancia =
+distance(latitude_dono,longitude_dono,latitude_pet,longitude_pet,'K');
+distancia = distancia * 1000;
+if(distancia >20){
+printf("PET Distante/CUIDADO\n");
+}else{
+printf("Animal Seguro\n");
+}
+printf("A distancia e %lf em metros",distancia);
+}
