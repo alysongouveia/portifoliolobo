@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <title>PET Monitor</title>
+ <meta charset="utf-8">
+ </head>
+ <body>
+ <h1>Aplicativo em FASE BETA</h1>
+ <h5>Versão 0.1</h5>
+ <h2>Pode ocorrer falhas e erros</h2>
+ <h3>Os dados são exatos e matematicamente calculados</h3>
+
+ <body>
+ <img src="teste1.png" title="Programa Funcioando Corretamente" alt="teste1"
+width="650">
+ </body>
+
+ <!--AQUI FICA A PARTE DE LINKS-->
+ <body>
+<h3>DOWNLOAD</h3>
+<a href="https://www.mediafire.com/#7q5v2ua2vimpq"target>LINK
+INTERNO</a>
+ </body>
+
+
+ <p>O aplicativo consiste em localizar seu PET onde quer que ele esteja.
+ Inserindo sua localização e a localização de seu PET para rastreamento do animal,
+e
+ avisando ao Tutor caso ele esteja distante, emitindo um alerta no aplicativo.</p>
+
+ <p>Por favor, você precisará definir o nome do PET, o sexo, a cidade, o nome do
+Tutor.</p>
+
+ <h2>REQUISITOS PARA USAR O APLICATIVO</h2>
+ <ul>
+ <li>Nome do PET</li>
+ <li>Raça do PET</li>
+ <li>Latitude</li>
+ <li>Longitude</li>
+ <li>Cidade do PET</li>
+ <li>Tutor do PET</li>
+ </ul>
+
+ <!--AQUI FICA A TABELA EXPLICATIVA-->
+ <table>
+ <tr>
+<th>NOME DO PET</th>
+<th>RAÇA</th>
+<th>SEXO</th>
+<th>LATITUDE</th>
+<th>LONGITUDE</th>
+6
+<style>
+table,th,td{border:2px solid #000};
+</style>
+ <h3>IGNORE OS DADOS ABAIXO. OS MESMOS SÃO APENAS FICTÍCIOS E
+NÃO POSSUEM INFLUÊNCIA NO MUNDO REAL</h3>
+
+ <!--AQUI FICA OS EXEMPLOS QUE SE PODE USAR NO APP-->
+ </tr>
+<td>MAX</td>
+<td>Fila</td>
+<td>Masculino</td>
+<td>40.75964663</td>
+<td>-73.98401499</td>
+ </table>
+ </body>
+</html>
